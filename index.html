@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <title>HRscript webcam event</title>
+    <link href = "style.css" rel = "stylesheet">
+  </head>
+  <body>
+    <p>Developed by - HRscript lead developer</p>
+    <button onclick = "attachCam()">Connect to camera</button>
+        <button onclick = "takeImage()">Take image</button>
+            <button onclick = "check()">Identify image</button>
+    <center>
+    <div id = "camera">
+    </div>
+      <div id = "snappedImage">
+      </div>
+      <p id = "message"></p>
+    </center>
+    <script src="sketch.js"></script>
+  </body>
+</html>
